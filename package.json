@@ -1,0 +1,38 @@
+{
+  "name": "status-page",
+  "version": "1.0.0",
+  "description": "Simple status page created to learn a little bit of web development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaldaniel/nodejs-status-page.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mangodb",
+    "bootstrap",
+    "status-page",
+    "statuspage",
+    "website"
+  ],
+  "author": "Michał Daniel",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/michaldaniel/nodejs-status-page/issues"
+  },
+  "homepage": "https://github.com/michaldaniel/nodejs-status-page#readme",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "mongoose": "latest",
+    "npm": "latest",
+    "ejs": "latest",
+    "bootstrap": "latest",
+    "popper": "latest",
+    "jquery": "latest",
+    "@fortawesome/fontawesome-free": "latest"
+  }
+}
