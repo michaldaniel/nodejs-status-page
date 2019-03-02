@@ -41,9 +41,9 @@ JavaScript, Node.js, Express.js, MangoDB, Mangoose, Bootstrap, jQuery, EJS Templ
 
 ## Todo
 
-- [ ] Project setup
-- [ ] Basic models, controllers and routes
-- [ ] Layout mock-ups
+- [x] Project setup
+- [x] Basic models, controllers and routes
+- [x] Layout mock-ups
 - [ ] Connect with real data
 - [ ] Display real data on main page
 - [ ] Handle login, register, logout and authorization
