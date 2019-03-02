@@ -1,0 +1,132 @@
+<% include ../partials/header %>
+
+<!-- Start of index page content -->
+
+<main class="container mt-5">
+	<header class="card bg-white rounded shadow-sm">
+		<div class="card-body">
+			<div class="d-flex justify-content-between align-items-center w-100">
+				<div>
+					<h2>Admin panel</h2>
+				</div>
+				<div class="btn-group" role="group" aria-label="Navigation buttons">
+					<a href="/" class="btn btn-outline-secondary" role="button">
+						<i class="fa fa-arrow-left mr-1" aria-hidden="true"></i>
+						Go back
+					</a>
+					<a href="/login/logout" class="btn btn-outline-dark" role="button">
+						<i class="fa fa-sign-out-alt mr-1"></i>
+						Logout
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="global-configuration" class="card bg-white rounded shadow-sm mt-3">
+		<form>
+			<div class="card-header">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<strong><i class="fa fa-cogs mr-1" aria-hidden="true"></i> Global configuration</strong>
+					<button class="btn btn-primary" type="submit" role="button">
+						<i class="fa fa-save mr-1" aria-hidden="true"></i>
+						Save
+					</button>
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+						<label for="inputName">Website name</label>
+						<input type="text" class="form-control" id="inputName" placeholder="Website name" value="Status Page">
+				</div>
+				<div class="form-group">
+						<label for="inputDescription">Website description</label>
+						<input type="text" class="form-control" id="inputDescription" placeholder="Website description" value="Simple ping-based status page made with Node.js, Express & MangoDB">
+				</div>
+				<div class="form-group">
+						<label for="inputUrl">Website url</label>
+						<input type="text" class="form-control" id="inputUrl" placeholder="Website url" value="https://github.com/michaldaniel/nodejs-status-page">
+				</div>
+				<div class="form-group">
+					<label for="inputInfo">Status message</label>
+					<textarea class="form-control" id="inputInfo" rows="3" placeholder="Status message..."></textarea>
+				</div>
+			</div>
+		</form>
+	</section>
+	
+	<section id="sites-configuration" class="card bg-white rounded shadow-sm mt-3">
+		<div class="card-header">
+			<div class="d-flex justify-content-between align-items-center w-100">
+			<strong><i class="fa fa-globe mr-1" aria-hidden="true"></i> Sites configuration</strong>
+			<a href="/admin/website" class="btn btn-primary" role="button">
+					<i class="fa fa-plus mr-1" aria-hidden="true"></i>
+					Add
+			</a>
+			</div>
+		</div>
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<strong class="text-gray-dark mr-1">www.examp.le</strong>
+						<span>
+							<span class="badge badge-danger"><i class="fa fa-times" aria-hidden="true"></i> Outage</span>
+							<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+						</span>
+						<span class="d-block text-muted">Site description</span>
+						<span class="d-block text-muted"><a href="https://www.examp.le">https://www.examp.le</span>
+						<span class="d-block text-info mt-1"><i class="fa fa-info mr-1" aria-hidden="true"></i> Status message ipsum dolor sit amet, consectetur adipiscing elit.</span>
+					</div>
+					<a href="/admin/website" role="button" class="btn btn-outline-secondary">
+						<i class="fa fa-cogs mr-1" aria-hidden="true"></i> Manage
+					</a>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<strong class="text-gray-dark mr-1">www.examp.le</strong>
+						<span class="badge badge-success"><i class="fa fa-check" aria-hidden="true"></i> OK</span>
+						<span class="d-block text-muted">Site description</span>
+						<span class="d-block text-muted"><a href="https://www.examp.le">https://www.examp.le</span>
+					</div>
+					<a href="/admin/website" role="button" class="btn btn-outline-secondary">
+						<i class="fa fa-cogs mr-1" aria-hidden="true"></i> Manage
+					</a>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<strong class="text-gray-dark mr-1">www.examp.le</strong>
+						<span class="badge badge-warning"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Mantaince</span>
+						<span class="d-block text-muted">Site description</span>
+						<span class="d-block text-muted"><a href="https://www.examp.le">https://www.examp.le</span>
+						<span class="d-block text-info mt-1"><i class="fa fa-info mr-1" aria-hidden="true"></i> Status message ipsum dolor sit amet, consectetur adipiscing elit.</span>
+					</div>
+					<a href="/admin/website" role="button" class="btn btn-outline-secondary">
+						<i class="fa fa-cogs mr-1" aria-hidden="true"></i> Manage
+					</a>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<strong class="text-gray-dark mr-1">www.examp.le</strong>
+						<span class="badge badge-success"><i class="fa fa-check" aria-hidden="true"></i> OK</span>
+						<span class="d-block text-muted">Site description</span>
+						<span class="d-block text-muted"><a href="https://www.examp.le">https://www.examp.le</span>
+					</div>
+					<a href="/admin/website" role="button" class="btn btn-outline-secondary">
+						<i class="fa fa-cogs mr-1" aria-hidden="true"></i> Manage
+					</a>
+				</div>
+			</li>
+	  	</ul>
+	</section>
+</main>
+
+<!-- End of index page content -->
+ 
+<% include ../partials/footer_light %>

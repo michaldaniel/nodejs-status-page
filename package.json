@@ -25,14 +25,16 @@
   },
   "homepage": "https://github.com/michaldaniel/nodejs-status-page#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "latest",
     "body-parser": "latest",
-    "express": "latest",
-    "mongoose": "latest",
-    "npm": "latest",
-    "ejs": "latest",
     "bootstrap": "latest",
-    "popper": "latest",
+    "crypto": "^1.0.1",
+    "ejs": "latest",
+    "express": "latest",
     "jquery": "latest",
-    "@fortawesome/fontawesome-free": "latest"
+    "jsonwebtoken": "^8.5.0",
+    "mongoose": "latest",
+    "npm": "^6.8.0",
+    "popper": "latest"
   }
 }

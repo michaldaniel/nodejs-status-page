@@ -1,8 +1,150 @@
 <% include ../partials/header %>
 
 <!-- Start of index page content -->
- 
-<p>Hello from index page!</p>
+
+<main class="container mt-5">
+	<header class="card bg-white rounded shadow-sm">
+		<div class="card-body">
+			<div class="d-flex justify-content-between align-items-center w-100">
+				<div>
+					<h2>Status Page</h2>
+					<span class="d-block text-muted">Simple ping-based status page made with Node.js, Express & MangoDB</span>
+				</div>
+				<a href="https://github.com/michaldaniel/nodejs-status-page" class="btn btn-primary" role="button">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					Homepage
+				</a>
+			</div>
+		</div>
+	</header>
+	
+	<section id="status-message" class="alert alert-info rounded shadow-sm mt-3" role="alert">
+		<h6 class="alert-heading">
+			<strong><i class="fa fa-info mr-1" aria-hidden="true"></i> Status message</strong>
+		</h6>
+		<div class="alert-body">
+			<p class="alert-text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+		</div>
+	</section>
+	 
+	<section id="site-status" class="card bg-white rounded shadow-sm mt-3">
+		<div class="card-header">
+			<strong><i class="fa fa-globe mr-1" aria-hidden="true"></i> Site status</strong>
+		</div>
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<strong class="text-gray-dark">www.examp.le</strong>
+						<span class="d-block text-muted">Site description</span>
+					</div>
+					<span class="badge badge-success"><i class="fa fa-check" aria-hidden="true"></i> OK</span>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<strong class="text-gray-dark">www.examp.le</strong>
+						<span class="d-block text-muted">Site description</span>
+						<span class="d-block text-info mt-1"><i class="fa fa-info mr-1" aria-hidden="true"></i> Status message ipsum dolor sit amet, consectetur adipiscing elit.</span>
+					</div>
+					<div>
+						<span class="badge badge-danger"><i class="fa fa-times" aria-hidden="true"></i> Outage</span>
+						<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+					</div>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<strong class="text-gray-dark">www.examp.le</strong>
+						<span class="d-block text-muted">Site description</span>
+						<span class="d-block text-info mt-1"><i class="fa fa-info mr-1" aria-hidden="true"></i> Status message ipsum dolor sit amet, consectetur adipiscing elit.</span>
+					</div>
+					<span class="badge badge-warning"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Mantaince</span>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<strong class="text-gray-dark">www.examp.le</strong>
+						<span class="d-block text-muted">Site description</span>
+					</div>
+					<div>
+						<span class="badge badge-danger"><i class="fa fa-times" aria-hidden="true"></i> Outage</span>
+						<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+					</div>
+				</div>
+			</li>
+	  	</ul>
+	</section>
+
+	<section id="past-incidents" class="card bg-white rounded shadow-sm mt-3">
+		<div class="card-header">
+			<strong><i class="fa fa-calendar mr-1" aria-hidden="true"></i> Past incidents</strong>
+		</div>
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<span class="d-block text-muted"><small>02.03.2019 11:47:25 AM UTC</small></span>
+						<span class="text-gray-dark">Outage of <strong>www.examp.le</strong></span>
+					</div>
+					<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<span class="d-block text-muted"><small>02.03.2019 11:47:25 AM UTC</small></span>
+						<span class="text-gray-dark">Outage of <strong>www.examp.le</strong></span>
+					</div>
+					<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<span class="d-block text-muted"><small>02.03.2019 11:47:25 AM UTC</small></span>
+						<span class="text-gray-dark">Outage of <strong>www.examp.le</strong></span>
+
+					</div>
+					<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<span class="d-block text-muted"><small>02.03.2019 11:47:25 AM UTC</small></span>
+						<span class="text-gray-dark">Outage of <strong>www.examp.le</strong></span>
+					</div>
+					<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<span class="d-block text-muted"><small>02.03.2019 11:47:25 AM UTC</small></span>
+						<span class="text-gray-dark">Outage of <strong>www.examp.le</strong></span>
+					</div>
+					<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<span class="d-block text-muted"><small>02.03.2019 11:47:25 AM UTC</small></span>
+						<span class="text-gray-dark">Outage of <strong>www.examp.le</strong></span>
+
+					</div>
+					<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+				</div>
+			</li>
+	  	</ul>
+	</section>
+</main>
 
 <!-- End of index page content -->
  

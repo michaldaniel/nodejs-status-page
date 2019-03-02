@@ -1,0 +1,170 @@
+<% include ../partials/header %>
+
+<!-- Start of index page content -->
+
+<main class="container mt-5">
+
+	<header class="card bg-white rounded shadow-sm">
+		<div class="card-body">
+			<div class="d-flex justify-content-between align-items-center w-100">
+				<div>
+					<h2>Admin panel</h2>
+				</div>
+				<div class="btn-group" role="group" aria-label="Navigation buttons">
+					<a href="/admin" class="btn btn-outline-secondary" role="button">
+						<i class="fa fa-arrow-left mr-1" aria-hidden="true"></i>
+						Go back
+					</a>
+					<a href="/login/logout" class="btn btn-outline-dark" role="button">
+						<i class="fa fa-sign-out-alt mr-1"></i>
+						Logout
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="alert alert-success rounded shadow-sm mt-3" role="alert">
+		<i class="fa fa-check mr-1" aria-hidden="true"></i> Website is currently operational!
+	</div>
+	<div class="alert alert-info rounded shadow-sm mt-3" role="alert">
+		<span class="d-block text-muted"><i class="fa fa-info mr-1" aria-hidden="true"></i> Last outage took place at 02.03.2019 11:47:25 AM UTC</span>
+		<span class="d-block text-muted"><i class="fa fa-info mr-1" aria-hidden="true"></i> Last maintenance took place at 02.03.2019 11:47:25 AM UTC</span>
+	</div>
+
+	<section id="website-configuration" class="card bg-white rounded shadow-sm mt-3">
+		<form>
+			<div class="card-header">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<strong><i class="fa fa-cogs mr-1" aria-hidden="true"></i> Website configuration</strong>
+					<div class="btn-group" role="group" aria-label="Navigation buttons">
+						<a href="/website/delete" class="btn btn-danger" role="button">
+							<i class="fa fa-trash mr-1"></i>
+							Delete
+						</a>
+						<a href="/admin" class="btn btn-secondary" role="button">
+							<i class="fa fa-times mr-1"></i>
+							Discard
+						</a>
+						<button class="btn btn-primary" type="submit" role="button">
+							<i class="fa fa-save mr-1" aria-hidden="true"></i>
+							Save
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+						<label for="inputName">Website name</label>
+						<input type="text" class="form-control" id="inputName" placeholder="Website name" value="www.examp.le">
+				</div>
+				<div class="form-group">
+						<label for="inputDescription">Website description</label>
+						<input type="text" class="form-control" id="inputDescription" placeholder="Website description" value="Website description">
+				</div>
+				<div class="form-group">
+						<label for="inputUrl">Website url</label>
+						<input type="text" class="form-control" id="inputUrl" placeholder="Website url" value="https://www.examp.le">
+				</div>
+				<div class="form-group">
+					<label for="inputInfo">Status message</label>
+					<textarea class="form-control" id="inputInfo" rows="3" placeholder="Status message..."></textarea>
+				</div>
+				<div class="custom-control custom-switch">
+					  <input type="checkbox" class="custom-control-input" id="inputMaintenance">
+					  <label class="custom-control-label" for="inputMaintenance">Maintenance mode</label>
+				</div>
+			</div>
+		</form>
+	</section>
+	
+		<section id="past-incidents" class="card bg-white rounded shadow-sm mt-3">
+		<div class="card-header">
+			<strong><i class="fa fa-calendar mr-1" aria-hidden="true"></i> Past incidents</strong>
+		</div>
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<span class="d-block text-muted"><small>02.03.2019 11:47:25 AM UTC</small></span>
+						<span class="text-gray-dark">Outage of <strong>www.examp.le</strong></span>
+						<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+					</div>
+					<a href="/website/incident/delete" class="btn btn-outline-danger" role="button">
+						<i class="fa fa-trash mr-1"></i>
+						Delete
+					</a>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<span class="d-block text-muted"><small>02.03.2019 11:47:25 AM UTC</small></span>
+						<span class="text-gray-dark">Outage of <strong>www.examp.le</strong></span>
+						<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+					</div>
+					<a href="/website/incident/delete" class="btn btn-outline-danger" role="button">
+						<i class="fa fa-trash mr-1"></i>
+						Delete
+					</a>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<span class="d-block text-muted"><small>02.03.2019 11:47:25 AM UTC</small></span>
+						<span class="text-gray-dark">Outage of <strong>www.examp.le</strong></span>
+						<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+					</div>
+					<a href="/website/incident/delete" class="btn btn-outline-danger" role="button">
+						<i class="fa fa-trash mr-1"></i>
+						Delete
+					</a>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<span class="d-block text-muted"><small>02.03.2019 11:47:25 AM UTC</small></span>
+						<span class="text-gray-dark">Outage of <strong>www.examp.le</strong></span>
+						<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+					</div>
+					<a href="/website/incident/delete" class="btn btn-outline-danger" role="button">
+						<i class="fa fa-trash mr-1"></i>
+						Delete
+					</a>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<span class="d-block text-muted"><small>02.03.2019 11:47:25 AM UTC</small></span>
+						<span class="text-gray-dark">Outage of <strong>www.examp.le</strong></span>
+						<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+					</div>
+					<a href="/website/incident/delete" class="btn btn-outline-danger" role="button">
+						<i class="fa fa-trash mr-1"></i>
+						Delete
+					</a>		
+				</div>
+			</li>
+			<li class="list-group-item">
+				<div class="d-flex justify-content-between align-items-center w-100">
+					<div>
+						<span class="d-block text-muted"><small>02.03.2019 11:47:25 AM UTC</small></span>
+						<span class="text-gray-dark">Outage of <strong>www.examp.le</strong></span>
+						<span class="badge badge-dark"><i class="fa fa-clock" aria-hidden="true"></i> 5 min</span>
+					</div>
+					<a href="/website/incident/delete" class="btn btn-outline-danger" role="button">
+						<i class="fa fa-trash mr-1"></i>
+						Delete
+					</a>
+				</div>
+			</li>
+	  	</ul>
+	</section>
+</main>
+
+<!-- End of index page content -->
+ 
+<% include ../partials/footer_light %>

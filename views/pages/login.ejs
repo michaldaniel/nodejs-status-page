@@ -1,0 +1,33 @@
+<% include ../partials/header %>
+
+<!-- Start of index page content -->
+<main class="container mt-5">
+	<section id="admin-login" class="mx-auto" style="max-width: 420px;">
+		<div class="card bg-white rounded shadow-sm mt-4">
+			<div class="card-header">
+				<strong><i class="fa fa-globe mr-1" aria-hidden="true"></i> Admin login</strong>
+			</div>
+			<div class="card-body">
+				<form class="form-signin">
+					<div class="form-label-group py-2">
+						<input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+					</div>
+
+					<div class="form-label-group py-2">
+						<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+					</div>
+
+					<div class="checkbox mb-3 py-2">
+						<label>
+							<input type="checkbox" value="remember-me"> Remember me
+						</label>
+					</div>
+					<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+				</form>
+			</div>
+		</div>
+	</section>
+</main>
+<!-- End of index page content -->
+ 
+<% include ../partials/footer_light %>
