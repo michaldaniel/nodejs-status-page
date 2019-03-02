@@ -1,6 +1,6 @@
 # Simple Node.js status page
 
-Simple status page created to learn a bit of web development. It's learning project in the making, considering it's my first time with JavaScript & Node.js I will be honestly surprised if it turns out usable.
+Simple status page created to learn a bit of a web development. It's a learning project in the making, considering it's my first time with the JavaScript & Node.js I will be honestly surprised if it turns out usable.
 
 ## Planned features
 
